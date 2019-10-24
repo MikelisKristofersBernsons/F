@@ -5,69 +5,122 @@
 
 	<title>RVT Estudijas</title>>
 
+
 </head>>
 
 
+<style>
+	
+	ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #f1f1f1: 
+}
+
+li a {
+	float: left;
+	display: block;
+	color: #000;
+	padding: 6px 12px;
+	text-decoration: none;
+}
+
+
+li a:hover {
+	background-color: #555;
+	color: white; 
+}
+
+
+</style>
+
+
+
 <body>
-
-<!--  -->
-
-<h1>Virsraksts</h1>  <!-- VIRSRAKSTI -->
-<p>Rindkopa.</p>
-
-
-<h1>Virsraksts *h1*</h1>
-<h2>Virsraksts *h2*</h2>  <!-- atšķirīgu izmēru virsraksti -->
-<h3>Virsraksts *h3*</h3>
-
-
-<h1><center>Centrēts teksts</center>></h1>>
-
-<p>Rindkopa</p>
-<p>otra rindkopa.</p>   <!-- rindkopu piemērs -->
-
-
-<a href="js/index.html"> links uz js/index </a> <!-- link to js/index -->
-
-
-
-<form method="get" action="js/index.html">   <!-- poga uz js/index -->
-    <button type="submit">js index</button> 
-</form>
-
-
-
-<form method="get" action="img/CactusPictureTest.jpg">
-	<button type="submit"> Cactus Picture Test Button </button>
-</form>
-
-
-<form action="Temp/LoginThing.html">
-  Vārds : <input type="text" name="fname"><br>         <!-- name, password input boxes -->
-  Parole : <input type="password" name="lname"><br>
-  <input type="submit" value="Ielogoties">
-</form>
-
-
-
-
-<p></p>>
-
-<button>Poga kas neko nedara</button>  <!-- tukša poga -->
-
-
-
 <ul>
-  <li>Kafija</li>
-  <li>Pieniņš</li>  <!-- bullet saraksts -->
-  <li>Ūdens</li>
-</ul>
+		<li><a href="Temp/h1Test.html">h1 test</a></li>
+		<li><a href="Temp/h2Test.html">h2.1 test</a></li>
+		<li><a href="Temp/h2Test.html">h2.2 test</a></li>
+		<li><a href="Temp/h2Test.html">h2.3 test</a></li>
+		<li><a href="Temp/h2Test.html">h2.4 test</a></li>
+		<li><a href="Temp/h2Test.html">h2.5 test</a></li>
+	</ul>
 
-<ol>
-  <li>Kafija</li>
-  <li>Pieniņš</li>  <!-- nummurēts saraksts -->
-  <li>Ūdens</li>
-</ol>
+
+
+<p id="demo"></p>
+
+<script>
+	function randskaitlis(){
+	return Math.floor(Math.random()* 10);
+
+}
+
+document.getElementById("demo").innerHTML = window.randskaitlis();
+
+</script>
+
+
+<form><button onclick="randskaitlis()">rand</button></form>
+
+
+	<h1>Virsraksts</h1>  <!-- VIRSRAKSTI -->
+	<p>Rindkopa.</p>
+
+	<form action="/action_page.php">
+	  Meklēt: <input type="text" name="Searchname"><br>
+	</form>
+
+	<h1>Virsraksts *h1*</h1>
+	<h2>Virsraksts *h2*</h2>  <!-- atšķirīgu izmēru virsraksti -->
+
+	<a href="js/index.html"> links uz js/index </a> <!-- link to js/index -->
+
+
+
+	<form method="get" action="js/index.html">   <!-- poga uz js/index -->
+	    <button type="submit">js index</button> 
+	</form>
+
+
+	<br><br>
+	<form method="get" action="img/CactusPictureTest.jpg">
+		<button type="submit"> Cactus Picture Test Button </button>
+	</form>
+
+	
+	<br><br>
+	<form action="Temp/LoginThing.html">
+
+	  Vārds:
+	  <br><input type="text" name="fname"><br>         <!-- name, password input boxes -->
+	  Parole:
+	  <br><input type="password" name="lname"><br>
+
+	  <input type="submit" value="Ielogoties">
+
+	</form>
+
+
+	<br><br>
+	<button>Poga kas neko nedara</button>  <!-- tukša poga -->
+	<br><br>
+
+
+	<ul>
+	  <li>Kafija</li>
+	  <li>Pieniņš</li>  <!-- bullet saraksts -->
+	  <li>Ūdens</li>
+	</ul>
+
+	<ol>
+	  <li>Kafija</li>
+	  <li>Pieniņš</li>  <!-- nummurēts saraksts -->
+	  <li>Ūdens</li>
+	</ol>
+
 
 </body>
 </html>

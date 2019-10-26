@@ -1,126 +1,128 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
-	<title>RVT Estudijas</title>>
+	<title>RVT Estudijas</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
 
 
-</head>>
 
-
-<style>
+<body>	
 	
-	ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #f1f1f1: 
-}
+	<div class="main">
 
-li a {
-	float: left;
-	display: block;
-	color: #000;
-	padding: 6px 12px;
-	text-decoration: none;
-}
+		<div class="loginbox">
+			<form class="login" action="Temp/LoginThing.html">
+				<div align="right">
 
+				Vārds:
+				<br><input type="text" name="fname"><br>         <!-- name, password input boxes -->
+				Parole:
+				<br><input type="password" name="lname"><br>
 
-li a:hover {
-	background-color: #555;
-	color: white; 
-}
+				<input type="submit" value="Ielogoties">
+
+				</div>
+			</form>
+		</div>
 
 
-</style>
-
-
-
-<body>
-<ul>
-		<li><a href="Temp/h1Test.html">h1 test</a></li>
-		<li><a href="Temp/h2Test.html">h2.1 test</a></li>
-		<li><a href="Temp/h2Test.html">h2.2 test</a></li>
-		<li><a href="Temp/h2Test.html">h2.3 test</a></li>
-		<li><a href="Temp/h2Test.html">h2.4 test</a></li>
-		<li><a href="Temp/h2Test.html">h2.5 test</a></li>
-	</ul>
+		<div class="selection">
+			<div class="flexbox-item flexbox-item-1"><a href="Temp/h1Test.html">viens</a></div>
+			<div class="flexbox-item flexbox-item-2"><a href="Temp/h2Test.html">divi</a></div>
+			<div class="flexbox-item flexbox-item-3"><a href="Temp/h2Test.html">trīs</a></div>
+			<div class="flexbox-item flexbox-item-3"><a href="Temp/h2Test.html">četri</a></div>
+			<div class="flexbox-item flexbox-item-3"><a href="Temp/h2Test.html">pieci</a></div>
+			<div class="flexbox-item flexbox-item-3"><a href="Temp/h2Test.html">seši</a></div>
+			<div class="flexbox-item flexbox-item-3"><a href="Temp/h2Test.html">septiņi</a></div>
+			<div class="flexbox-item flexbox-item-3"><a href="Temp/h2Test.html">astoņi</a></div>
+		</div>
 
 
 
-<p id="demo"></p>
+			<ul class="font-test">
+				<li><a href="Temp/h1Test.html">h1 test</a></li>
+				<li><a href="Temp/h2Test.html">h2.1 test</a></li>
+				<li><a href="Temp/h2Test.html">h2.2 test</a></li>
+				<li><a href="Temp/h2Test.html">h2.3 test</a></li>
+			</ul>
 
-<script>
-	function randskaitlis(){
-	return Math.floor(Math.random()* 10);
-
-}
-
-document.getElementById("demo").innerHTML = window.randskaitlis();
-
-</script>
-
-
-<form><button onclick="randskaitlis()">rand</button></form>
-
-
-	<h1>Virsraksts</h1>  <!-- VIRSRAKSTI -->
-	<p>Rindkopa.</p>
-
-	<form action="/action_page.php">
-	  Meklēt: <input type="text" name="Searchname"><br>
-	</form>
-
-	<h1>Virsraksts *h1*</h1>
-	<h2>Virsraksts *h2*</h2>  <!-- atšķirīgu izmēru virsraksti -->
-
-	<a href="js/index.html"> links uz js/index </a> <!-- link to js/index -->
+		<div class="main-items">
+			<div class="main-items-empty">
+				<div class="kreisi"></div>
+				<div class="vidus"></div>
+				<div class="labi"></div>
+			</div>
+		</div>
 
 
 
-	<form method="get" action="js/index.html">   <!-- poga uz js/index -->
-	    <button type="submit">js index</button> 
-	</form>
 
 
-	<br><br>
-	<form method="get" action="img/CactusPictureTest.jpg">
-		<button type="submit"> Cactus Picture Test Button </button>
-	</form>
+		<p id="demo"></p>
 
-	
-	<br><br>
-	<form action="Temp/LoginThing.html">
+		<script>
+			function randskaitlis(){
+			return Math.floor(Math.random()* 10);
 
-	  Vārds:
-	  <br><input type="text" name="fname"><br>         <!-- name, password input boxes -->
-	  Parole:
-	  <br><input type="password" name="lname"><br>
+		}
 
-	  <input type="submit" value="Ielogoties">
+		document.getElementById("demo").innerHTML = window.randskaitlis();
 
-	</form>
+		</script>
 
 
-	<br><br>
-	<button>Poga kas neko nedara</button>  <!-- tukša poga -->
-	<br><br>
+		<form><button onclick="randskaitlis()">rand</button></form>
 
 
-	<ul>
-	  <li>Kafija</li>
-	  <li>Pieniņš</li>  <!-- bullet saraksts -->
-	  <li>Ūdens</li>
-	</ul>
-
-	<ol>
-	  <li>Kafija</li>
-	  <li>Pieniņš</li>  <!-- nummurēts saraksts -->
-	  <li>Ūdens</li>
-	</ol>
+			<h1 class="blue">Virsrakstss</h1>  <!-- VIRSRAKSTI -->
+			
+			<p>Rindkopa.</p>
 
 
+			<form action="/action_page.php">
+				Meklēt: <input type="text" name="Searchname"><br>
+			</form>
+
+			<h1>Virsraksts *h1*</h1>
+			<h2>Virsraksts *h2*</h2>  <!-- atšķirīgu izmēru virsraksti -->
+
+			<a href="js/index.html"> links uz js/index </a> <!-- link to js/index -->
+
+
+
+			<form method="get" action="js/index.html">   <!-- poga uz js/index -->
+				<button type="submit">js index</button> 
+			</form>
+
+
+			<br><br>
+			<form method="get" action="img/CactusPictureTest.jpg">
+				<button type="submit"> Cactus Picture Test Button </button>
+			</form>
+
+			<br><br>
+			<button>Poga kas neko nedara</button>  <!-- tukša poga -->
+			<br><br>
+
+		<center><img src="img/test2eft.jpg" height="129" width="132"></center>
+
+			<center><div class="box"></div></center>
+
+			<ul class="bottom">
+			<li>Kafija</li>
+			<li>Pieniņš</li>  <!-- bullet saraksts -->
+			<li>Ūdens</li>
+			</ul>
+
+			<ol>
+			<li>Kafija</li>
+			<li>Pieniņš</li>  <!-- nummurēts saraksts -->
+			<li>Ūdens</li>
+			</ol>
+
+
+	</div>
 </body>
 </html>
